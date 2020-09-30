@@ -12,7 +12,7 @@ namespace Test
 
             Console.ForegroundColor
                                  = ConsoleColor.Yellow;
-            Typewrite("Hej! Jag heter Uwuwewewe onyetenwewe ugweuhem osas. Välkommen till mitt frågesport.");
+            Typewrite("Hej! Jag heter Walsta G. Välkommen till mitt frågesport.");
             Console.WriteLine();
             Typewrite("Är du redo?");
             Console.WriteLine();
@@ -252,7 +252,7 @@ namespace Test
             if (Svar4 == "1")
             {
                 Console.WriteLine();
-                Typewrite("Korrekt Svar.");
+                Typewrite("Korrekt Svar!");
                 Console.WriteLine();
 
                 Typewrite(Hp + " p");

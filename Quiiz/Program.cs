@@ -1,21 +1,21 @@
 ﻿using System;
- 
+
 namespace Test
 {
     class Program
     {
         static void Main(string[] args)
         {
- 
+
             String Svar;
- 
+
             Console.ForegroundColor
                                  = ConsoleColor.Yellow;
             Console.WriteLine("Hej! Jag heter Uwuwewewe onyetenwewe ugweuhem osas. Välkommen till mitt frågesport.");
             Console.WriteLine("Är du redo?");
             Svar = Console.ReadLine().ToLower();
- 
- 
+
+
             if (Svar == "ja")
             {
                 Console.WriteLine();
@@ -27,9 +27,9 @@ namespace Test
                 Console.WriteLine("Got it?");
                 Redo();
             }
- 
+
             if (Svar == "nej")
- 
+
             {
                 Console.WriteLine();
                 Console.WriteLine("Ok!! Bry mig inte om du är redo, vi sätter igång ändå.");
@@ -38,7 +38,7 @@ namespace Test
                 Console.WriteLine("Dina antal poäng kommer i slutet att ge dig ett resultat i form av ett betyg A - F, då A är bäst och F för FALIUER.");
                 Console.WriteLine("Got it?");
                 Redo();
- 
+
                 if (Svar == "ok")
                 {
                     Console.WriteLine();
@@ -48,21 +48,21 @@ namespace Test
                     Console.WriteLine("Got it?");
                     Redo();
                 }
- 
+
             }
- 
+
             Console.ReadLine();
- 
+
         }
- 
+
         static void Redo()
         {
- 
+
             int Hp;
             Hp = 5000;
             String Svar2;
             Svar2 = Console.ReadLine().ToLower();
- 
+
             if (Svar2 == "ja")
             {
                 Console.WriteLine();
@@ -77,14 +77,14 @@ namespace Test
             }
             Console.ReadLine();
         }
- 
+
         static void betyg()
         {
- 
+
             int Hp;
             Hp = 5000;
             String Svar3;
- 
+
             Console.WriteLine("Snabb fråga innan vi börjar vilket betyg tror du att du kommer få från A - F?");
             Console.WriteLine();
             Console.WriteLine("A = " + Hp + " p");
@@ -93,9 +93,9 @@ namespace Test
             Console.WriteLine("D = " + (Hp - 3250) + " p");
             Console.WriteLine("E = " + (Hp - 3750) + " p");
             Console.WriteLine("F = " + (Hp - 5000) + " p");
- 
+
             Svar3 = Console.ReadLine().ToLower();
- 
+
             if (Svar3 == "a")
             {
                 Console.WriteLine();
@@ -104,7 +104,7 @@ namespace Test
                 Console.WriteLine("Tryck ENTER för att starta!");
                 Fråga1();
             }
- 
+
             if (Svar3 == "b")
             {
                 Console.WriteLine();
@@ -114,7 +114,7 @@ namespace Test
                 Console.WriteLine("Tryck ENTER för att starta!");
                 Fråga1();
             }
- 
+
             if (Svar3 == "c")
             {
                 Console.WriteLine();
@@ -123,7 +123,7 @@ namespace Test
                 Console.WriteLine("Tryck ENTER för att starta!");
                 Fråga1();
             }
- 
+
             if (Svar3 == "d")
             {
                 Console.WriteLine();
@@ -132,7 +132,7 @@ namespace Test
                 Console.WriteLine("Tryck ENTER för att starta!");
                 Fråga1();
             }
- 
+
             if (Svar3 == "e")
             {
                 Console.WriteLine();
@@ -142,7 +142,7 @@ namespace Test
                 Console.WriteLine("Tryck ENTER för att starta!");
                 Fråga1();
             }
- 
+
             if (Svar3 == "f")
             {
                 Console.WriteLine();
@@ -151,18 +151,18 @@ namespace Test
                 Console.WriteLine("Tryck ENTER för att starta!");
                 Fråga1();
             }
- 
+
             Console.ReadLine();
         }
- 
+
         static void Fråga1()
         {
- 
+
             int Hp;
             Hp = 500;
- 
+
             String Svar4;
- 
+
             Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine("Fråga1:" + Hp + " Poäng");
@@ -172,45 +172,41 @@ namespace Test
             Console.WriteLine("X. Geogre Washington");
             Console.WriteLine("2. George Wasington");
             Svar4 = Console.ReadLine().ToLower();
- 
+
             if (Svar4 == "1")
             {
                 Console.WriteLine();
                 Console.WriteLine("Korrekt Svar.");
                 Console.WriteLine(Hp + " p");
             }
- 
+
             else if (Svar4 != "1")
             {
                 Console.WriteLine();
                 Console.WriteLine("Felaktigt Svar");
                 Console.WriteLine("Hahah!!");
- 
+
                 Console.WriteLine(Hp - 500 + " p");
- 
+
             }
+
             Console.ReadLine();
- 
- 
- 
- 
+
         }
- 
+
         static void Fråga2()
         {
             string svar5;
- 
+
             Console.WriteLine("Fråga 2: XX Poäng");
             Console.WriteLine();
             Console.WriteLine();
- 
- 
+
+
             svar5 = Console.ReadLine().ToLower();
- 
- 
- 
- 
- 
+
+
+
         }
     }
 }

@@ -19,6 +19,8 @@ namespace Test
             Svar = Console.ReadLine().ToLower();
 
 
+
+
             if (Svar == "ja")
             {
                 Console.WriteLine();
@@ -160,7 +162,7 @@ namespace Test
             if (Svar3 == "c")
             {
                 Console.WriteLine();
-                Typewrite("Ok, men varför inte ett A? Satsar du så lågt haha!!!");
+                Typewrite("Ok, men varför inte ett A?");
                 Console.WriteLine();
 
                 Typewrite("Ok, ok vi sätter igång!");
@@ -226,6 +228,9 @@ namespace Test
         static void Fråga1()
         {
 
+
+            Random number = new Random();
+            int score = number.Next(1, 1000);
             int Hp;
             Hp = 500;
 
@@ -251,15 +256,20 @@ namespace Test
 
             if (Svar4 == "1")
             {
+                Console.ForegroundColor
+                         = ConsoleColor.Green;
                 Console.WriteLine();
                 Typewrite("Korrekt Svar!");
                 Console.WriteLine();
 
-                Typewrite(Hp + " p");
+                Typewrite("Your score:");
+                Console.ResetColor();
             }
 
             else if (Svar4 != "1")
             {
+                Console.ForegroundColor
+                                 = ConsoleColor.Red;
                 Console.WriteLine();
                 Typewrite("Felaktigt Svar");
                 Console.WriteLine();
@@ -269,6 +279,7 @@ namespace Test
 
                 Typewrite(Hp - 500 + " p");
                 Console.WriteLine();
+                Console.ResetColor();
 
             }
 
@@ -322,7 +333,7 @@ namespace Test
             for (int i = 0; i < message.Length; i++)
             {
                 Console.Write(message[i]);
-                System.Threading.Thread.Sleep(30);
+                System.Threading.Thread.Sleep(1);
             }
         }
     }

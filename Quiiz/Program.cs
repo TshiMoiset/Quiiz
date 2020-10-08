@@ -17,8 +17,6 @@ namespace Test
             Typewrite("Är du redo?");
             Console.WriteLine();
 
-
-
             while (true)
             {
 

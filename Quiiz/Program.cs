@@ -16,85 +16,103 @@ namespace Test
             Console.WriteLine();
             Typewrite("Är du redo?");
             Console.WriteLine();
-            Svar = Console.ReadLine().ToLower();
 
 
 
-
-            if (Svar == "ja")
+            while (true)
             {
-                Console.WriteLine();
-                Typewrite("Strålande!! Reglerna är enkla");
-                Console.WriteLine();
 
-                Typewrite("Jag ställer en fråga och du får 3 alternativ att välja mellan.");
-                Console.WriteLine();
+                Svar = Console.ReadLine().ToLower();
+                if (Svar == "ja")
+                {
+                    Console.WriteLine();
+                    Typewrite("Strålande!! Reglerna är enkla");
+                    Console.WriteLine();
 
-                Typewrite("Varje fråga ger olika mycket poäng beroende på frågans svårighetsnivå.");
-                Console.WriteLine();
+                    Typewrite("Jag ställer en fråga och du får 3 alternativ att välja mellan.");
+                    Console.WriteLine();
 
-                Typewrite("Dessutom kommer fråga att visa hur mycket poäng man får.");
-                Console.WriteLine();
+                    Typewrite("Varje fråga ger olika mycket poäng beroende på frågans svårighetsnivå.");
+                    Console.WriteLine();
 
-                Typewrite("Dina antal poäng kommer i slutet att ge dig ett resultat i form av ett betyg A - F, då A är bäst och F för FALIUER.");
+                    Typewrite("Dessutom kommer fråga att visa hur mycket poäng man får.");
+                    Console.WriteLine();
+
+                    Typewrite("Dina antal poäng kommer i slutet att ge dig ett resultat i form av ett betyg A - F, då A är bäst och F för FALIUER.");
+                    Console.WriteLine();
+                    Typewrite("Got it?");
+                    Console.WriteLine();
+                    Redo();
+                    break;
+                }
+
+                if (Svar == "nej")
+                {
+                    Console.WriteLine();
+                    Typewrite("Ok!! Bry mig inte om du är redo, vi sätter igång ändå.");
+                    Console.WriteLine();
+
+                    Typewrite("Reglerna är enkla, jag ställer en fråga och du får 3 alternativ att välja mellan.");
+                    Console.WriteLine();
+
+                    Typewrite("Frågorna ger olika mycket poäng beroende på frågans svårighet. Varje fråga kommer att visa hur mycket poäng man får");
+                    Console.WriteLine();
+
+                    Typewrite("Dina antal poäng kommer i slutet att ge dig ett resultat i form av ett betyg A - F, då A är bäst och F för FALIUER.");
+                    Console.WriteLine();
+
+                    Typewrite("Got it?");
+                    Console.WriteLine();
+                    Redo();
+                    break;
+
+                }
+
                 Console.WriteLine();
-                Typewrite("Got it?");
+                Typewrite("Svara ja eller nej!!");
                 Console.WriteLine();
-                Redo();
+                Typewrite("Är du redo?");
+                Console.WriteLine();
+                continue;
             }
 
-            if (Svar == "nej")
-
-            {
-                Console.WriteLine();
-                Typewrite("Ok!! Bry mig inte om du är redo, vi sätter igång ändå.");
-                Console.WriteLine();
-
-                Typewrite("Reglerna är enkla, jag ställer en fråga och du får 3 alternativ att välja mellan.");
-                Console.WriteLine();
-
-                Typewrite("Frågorna ger olika mycket poäng beroende på frågans svårighet. Varje fråga kommer att visa hur mycket poäng man får");
-                Console.WriteLine();
-
-                Typewrite("Dina antal poäng kommer i slutet att ge dig ett resultat i form av ett betyg A - F, då A är bäst och F för FALIUER.");
-                Console.WriteLine();
-
-                Typewrite("Got it?");
-                Console.WriteLine();
-
-                Redo();
-
-            }
-
-            Console.ReadLine();
 
         }
 
         static void Redo()
         {
 
-            int Hp;
-            Hp = 5000;
             String Svar2;
-            Svar2 = Console.ReadLine().ToLower();
 
-            if (Svar2 == "ja")
+            while (true)
             {
-                Console.WriteLine();
-                Typewrite("Då kör vi.");
-                Console.WriteLine();
+                Svar2 = Console.ReadLine().ToLower();
 
-                betyg();
-            }
-            if (Svar2 == "nej")
-            {
-                Console.WriteLine();
-                Typewrite("Vi sätter igång ändå!!");
-                Console.WriteLine();
+                if (Svar2 == "ja")
+                {
+                    Console.WriteLine();
+                    Typewrite("Då kör vi.");
+                    Console.WriteLine();
+                    betyg();
+                    break;
+                }
+                if (Svar2 == "nej")
+                {
+                    Console.WriteLine();
+                    Typewrite("Vi sätter igång ändå!!");
+                    Console.WriteLine();
+                    betyg();
+                    break;
+                }
 
-                betyg();
+                Console.WriteLine();
+                Typewrite("Ja eller Nej!!");
+                Console.WriteLine();
+                Typewrite("Got it?");
+                Console.WriteLine();
+                continue;
             }
-            Console.ReadLine();
+
         }
 
         static void betyg()
@@ -290,6 +308,7 @@ namespace Test
         static void Fråga2()
         {
             string svar5;
+
 
             Typewrite("Fråga 2: XX Poäng");
             Console.WriteLine();

@@ -12,14 +12,13 @@ namespace Test
 
             Console.ForegroundColor
                                  = ConsoleColor.Yellow;
-            Typewrite("Hej! Jag heter Walsta G. Välkommen till mitt frågesport.");
+            Typewrite("Hej! Jag heter Walsta G. Välkommen till min frågesport.");
             Console.WriteLine();
             Typewrite("Är du redo?");
             Console.WriteLine();
 
             while (true)
             {
-
                 Svar = Console.ReadLine().ToLower();
                 if (Svar == "ja")
                 {
@@ -140,105 +139,120 @@ namespace Test
             Console.WriteLine();
 
 
-            Svar3 = Console.ReadLine().ToLower();
-
-            if (Svar3 == "a")
+            while (true)
             {
-                Console.WriteLine();
-                Typewrite("Hahahahah!!!! DU TROR? Hahaha!! OK, OK");
-                Console.WriteLine();
+                Svar3 = Console.ReadLine().ToLower();
 
-                Typewrite("Vi sätter igång.");
-                Console.WriteLine();
+                if (Svar3 == "a")
+                {
+                    Console.WriteLine();
+                    Typewrite("Hahahahah!!!! DU TROR? Hahaha!! OK, OK");
+                    Console.WriteLine();
 
-                Typewrite("Tryck ENTER för att starta!");
-                Console.WriteLine();
+                    Typewrite("Vi sätter igång.");
+                    Console.WriteLine();
 
-                Fråga1();
+                    Typewrite("Tryck ENTER för att starta!");
+                    Console.WriteLine();
+
+                    Fråga1();
+                    break;
+                }
+
+                if (Svar3 == "b")
+                {
+                    Console.WriteLine();
+                    Typewrite("Hahahaha!!! Du kommer knappt att klara första frågan!!");
+                    Console.WriteLine();
+
+                    Typewrite("Men vi kör, vi kör. Visa mig att jag har fel.");
+                    Console.WriteLine();
+
+                    Typewrite("Jag har ALDRIG fel!!");
+                    Console.WriteLine();
+
+                    Typewrite("Tryck ENTER för att starta!");
+                    Console.WriteLine();
+
+
+                    Fråga1();
+                    break;
+                }
+
+                if (Svar3 == "c")
+                {
+                    Console.WriteLine();
+                    Typewrite("Ok, men varför inte ett A?");
+                    Console.WriteLine();
+
+                    Typewrite("Ok, ok vi sätter igång!");
+                    Console.WriteLine();
+
+                    Typewrite("Tryck ENTER för att starta!");
+                    Console.WriteLine();
+
+                    Fråga1();
+                    break;
+                }
+
+                if (Svar3 == "d")
+                {
+                    Console.WriteLine();
+                    Typewrite("Ok, någon satsar lågt.");
+                    Console.WriteLine();
+
+                    Typewrite("Det kanske går bättre än vad man förväntar sig");
+                    Console.WriteLine();
+
+                    Typewrite("Tryck ENTER för att starta!");
+                    Console.WriteLine();
+
+                    Fråga1();
+                    break;
+                }
+
+                if (Svar3 == "e")
+                {
+                    Console.WriteLine();
+                    Typewrite("Varför satsar du så lågt? Man ska satsa högt.");
+                    Console.WriteLine();
+
+                    Typewrite("Man ska sikta på molnen.");
+                    Console.WriteLine();
+
+                    Typewrite("Men ok, Vi kör.");
+                    Console.WriteLine();
+
+                    Typewrite("Tryck ENTER för att starta!");
+                    Console.WriteLine();
+
+                    Fråga1();
+                    break;
+                }
+
+                if (Svar3 == "f")
+                {
+                    Console.WriteLine();
+                    Typewrite("Mmm........:/");
+                    Console.WriteLine();
+
+                    Typewrite("Aha starta ok. Det var väl det du sa ok. Vi sätter igång.");
+                    Console.WriteLine();
+
+                    Typewrite("Tryck ENTER för att starta!");
+                    Console.WriteLine();
+
+                    Fråga1();
+                    break;
+                }
+
+                Console.WriteLine();
+                Typewrite("Vilket betyg tror du att du kommer få från A - F?");
+                Console.WriteLine();
+                Typewrite("A, B, C, D, E eller F?");
+                Console.WriteLine();
+                continue;
             }
-
-            if (Svar3 == "b")
-            {
-                Console.WriteLine();
-                Typewrite("Hahahaha!!! Du kommer knappt att klara första frågan!!");
-                Console.WriteLine();
-
-                Typewrite("Men vi kör, vi kör. Visa mig att jag har fel.");
-                Console.WriteLine();
-
-                Typewrite("Jag har ALDRIG fel!!");
-                Console.WriteLine();
-
-                Typewrite("Tryck ENTER för att starta!");
-                Console.WriteLine();
-
-                Fråga1();
-            }
-
-            if (Svar3 == "c")
-            {
-                Console.WriteLine();
-                Typewrite("Ok, men varför inte ett A?");
-                Console.WriteLine();
-
-                Typewrite("Ok, ok vi sätter igång!");
-                Console.WriteLine();
-
-                Typewrite("Tryck ENTER för att starta!");
-                Console.WriteLine();
-
-                Fråga1();
-            }
-
-            if (Svar3 == "d")
-            {
-                Console.WriteLine();
-                Typewrite("Ok, någon satsar lågt.");
-                Console.WriteLine();
-
-                Typewrite("Det kanske går bättre än vad man förväntar sig");
-                Console.WriteLine();
-
-                Typewrite("Tryck ENTER för att starta!");
-                Console.WriteLine();
-
-                Fråga1();
-            }
-
-            if (Svar3 == "e")
-            {
-                Console.WriteLine();
-                Typewrite("Varför satsar du så lågt? Man ska satsa högt.");
-                Console.WriteLine();
-
-                Typewrite("Man ska sikta på molnen");
-                Console.WriteLine();
-
-                Typewrite("Men ok, Vi kör.");
-                Console.WriteLine();
-
-                Typewrite("Tryck ENTER för att starta!");
-                Console.WriteLine();
-
-                Fråga1();
-            }
-
-            if (Svar3 == "f")
-            {
-                Console.WriteLine();
-                Typewrite("Mmm........:/");
-                Console.WriteLine();
-
-                Typewrite("Aha starta ok. Det var väll det du sa ok. Vi sätter igång.");
-                Console.WriteLine();
-
-                Typewrite("Tryck ENTER för att starta!");
-                Console.WriteLine();
-
-                Fråga1();
-            }
-
-            Console.ReadLine();
         }
 
         static void Fråga1()
@@ -246,7 +260,7 @@ namespace Test
 
 
             Random number = new Random();
-            int score = number.Next(1, 1000);
+            int score = number.Next(1, 150);
             int Hp;
             Hp = 500;
 
@@ -268,58 +282,192 @@ namespace Test
             Typewrite("2. George Wasington");
             Console.WriteLine();
 
-            Svar4 = Console.ReadLine().ToLower();
-
-            if (Svar4 == "1")
+            while (true)
             {
-                Console.ForegroundColor
-                         = ConsoleColor.Green;
-                Console.WriteLine();
-                Typewrite("Korrekt Svar!");
-                Console.WriteLine();
 
-                Typewrite("Your score:");
-                Console.ResetColor();
+                Svar4 = Console.ReadLine().ToLower();
+
+                if (Svar4 == "1")
+                {
+                    Console.ForegroundColor
+                             = ConsoleColor.Green;
+                    Console.WriteLine();
+                    Typewrite("Korrekt Svar!");
+                    Console.WriteLine();
+
+                    Typewrite("Dina poäng: ");
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    Fråga2();
+
+                    break;
+                }
+
+                if (Svar4 == "x")
+                {
+                    Console.ForegroundColor
+                                     = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Felaktigt Svar");
+                    Console.WriteLine();
+
+                    Typewrite("Hahah!!");
+                    Console.WriteLine();
+
+                    Typewrite(Hp - 500 + " p");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    Fråga2();
+                    break;
+                }
+
+
+                if (Svar4 == "2")
+                {
+                    Console.ForegroundColor
+                                     = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Felaktigt Svar");
+                    Console.WriteLine();
+
+                    Typewrite("Hahah!!");
+                    Console.WriteLine();
+
+                    Typewrite(Hp - 500 + " p");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    Fråga2();
+                    break;
+                }
+
+                Console.ForegroundColor
+                                                   = ConsoleColor.Yellow;
+                Console.WriteLine();
+                Typewrite("Svara med 1, X eller 2!");
+                Console.WriteLine();
+                Typewrite("Vad heter USAs första president?");
+                Console.WriteLine();
+                Typewrite("1. George Washington");
+                Console.WriteLine();
+                Typewrite("X. Geogre Washington");
+                Console.WriteLine();
+                Typewrite("2. George Wasington");
+                Console.WriteLine();
+                continue;
             }
 
-            else if (Svar4 != "1")
-            {
-                Console.ForegroundColor
-                                 = ConsoleColor.Red;
-                Console.WriteLine();
-                Typewrite("Felaktigt Svar");
-                Console.WriteLine();
-
-                Typewrite("Hahah!!");
-                Console.WriteLine();
-
-                Typewrite(Hp - 500 + " p");
-                Console.WriteLine();
-                Console.ResetColor();
-
-            }
-
-            Console.ReadLine();
 
         }
 
         static void Fråga2()
         {
+
+            int Hp;
+            Hp = 2000;
             string svar5;
 
-
+            Console.ForegroundColor
+                = ConsoleColor.Yellow;
+            Console.WriteLine();
             Typewrite("Fråga 2: XX Poäng");
             Console.WriteLine();
-            Typewrite("Fråga inte tillgänlig");
+            Typewrite("Heter det “en rak kurva” eller heter det “ett rak kurva”?");
+            Console.WriteLine();
+            Typewrite("1. En rak kurva.");
+            Console.WriteLine();
+            Typewrite("X. Ett rak kurva.");
+            Console.WriteLine();
+            Typewrite("2. Det finns inga raka kurvor");
+            Console.WriteLine();
 
+            while (true)
+            {
 
-            svar5 = Console.ReadLine().ToLower();
+                svar5 = Console.ReadLine().ToLower();
+                if (svar5 == "1")
+                {
 
+                    Console.ForegroundColor
+                    = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Felaktigt Svar");
+                    Console.WriteLine();
 
+                    Typewrite("Hahah!!");
+                    Console.WriteLine();
+
+                    Typewrite("0 p");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    fråga3();
+                    break;
+                }
+
+                if (svar5 == "x")
+                {
+                    Console.ForegroundColor
+                               = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Felaktigt Svar");
+                    Console.WriteLine();
+
+                    Typewrite("Hahah!!");
+                    Console.WriteLine();
+
+                    Typewrite("0 p");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    fråga3();
+                    break;
+                }
+
+                if (svar5 == "2")
+                {
+
+                    Console.ForegroundColor
+                               = ConsoleColor.Green;
+                    Console.WriteLine();
+                    Typewrite("Korrekt Svar!");
+                    Console.WriteLine();
+
+                    Typewrite("Dina poäng: ");
+                    Console.ResetColor();
+                    Console.WriteLine();
+                    fråga3();
+                    break;
+                }
+
+                Console.ForegroundColor
+                                                               = ConsoleColor.Yellow;
+                Console.WriteLine();
+                Typewrite("Svara med 1, X eller 2!");
+                Console.WriteLine();
+                Typewrite("Heter det “en rak kurva” eller heter det “ett rak kurva”?");
+                Console.WriteLine();
+                Typewrite("1. En rak kurva.");
+                Console.WriteLine();
+                Typewrite("X. Ett rak kurva.");
+                Console.WriteLine();
+                Typewrite("2. Det finns inga raka kurvor");
+                Console.WriteLine();
+                continue;
+            }
 
         }
 
+        static void fråga3()
+        {
+            Console.WriteLine();
+            Typewrite("Wwwwwwwwwwwwwwwwwwwwwwww.......................................................................");
+            Console.WriteLine();
+            Console.ReadLine();
 
+
+        }
 
 
 

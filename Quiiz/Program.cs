@@ -15,7 +15,7 @@ namespace Test
 
             Console.ForegroundColor
                                  = ConsoleColor.Yellow;
-            Typewrite("Hej! Jag heter Walsta G. Välkommen till min frågesport.");
+            Typewrite("Hej! Jag heter Walsta G. West. Välkommen till min frågesport.");
             Console.WriteLine();
             Typewrite("Är du redo?");
             Console.WriteLine();
@@ -842,15 +842,17 @@ namespace Test
                       = ConsoleColor.Yellow;
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga 6: XX p");
+            Typewrite("Fråga 7: XX p");
             Console.WriteLine();
-            Typewrite("Är det här en bra fråga?");
+            Typewrite("När du var i min ålder kunde du inte prata.");
             Console.WriteLine();
-            Typewrite("1. Ja.");
+            Typewrite("Hur gammar är jag?");
             Console.WriteLine();
-            Typewrite("X. Är det här ett bra svar?");
+            Typewrite("1. 11 månader gammal.");
             Console.WriteLine();
-            Typewrite("2. Jag vet inte.");
+            Typewrite("X. Jag fanns inte.");
+            Console.WriteLine();
+            Typewrite("2. Du fanns inte.");
             Console.WriteLine();
 
             while (true)
@@ -863,7 +865,9 @@ namespace Test
                     Console.ForegroundColor
       = ConsoleColor.Red;
                     Console.WriteLine();
-                    Typewrite("Hur vet du det?");
+                    Typewrite("Hahaha!! Jag har aldrig kunnat prata.");
+                    Console.WriteLine();
+                    Typewrite("Finns jag ens?");
                     Console.WriteLine();
                     Typewrite("Felaktigt SVAR!!");
                     Console.WriteLine();
@@ -879,9 +883,11 @@ namespace Test
                     Console.ForegroundColor
       = ConsoleColor.Red;
                     Console.WriteLine();
-                    Typewrite("Sen när blev du en psykolog?");
+                    Typewrite("Vad menar du med att du inte fanns?");
                     Console.WriteLine();
-                    Typewrite("JAG är den som ställer frågorna här!!");
+                    Typewrite("What??");
+                    Console.WriteLine();
+                    Typewrite("FELAKTIGT SVAR!!");
                     Console.WriteLine();
                     Typewrite("Dina poäng: ");
                     Console.WriteLine();
@@ -894,11 +900,11 @@ namespace Test
                 if (svar10 == "2")
                 {
                     Console.ForegroundColor
-                          = ConsoleColor.Red;
+                          = ConsoleColor.Green;
                     Console.WriteLine();
-                    Typewrite("........................................");
+                    Typewrite("Jag skapades för ett par veckor sen");
                     Console.WriteLine();
-                    Typewrite("FELAKTIGT SVAR!!!");
+                    Typewrite("Korrekt svar!!!");
                     Console.WriteLine();
                     Typewrite("Dina poäng: ");
                     Console.ReadLine();
@@ -915,10 +921,85 @@ namespace Test
         static void fråga8()
         {
 
-            Typewrite("Jkksdnfwpeifnwepifn weifbwef");
+            string svar11;
+
+            Console.ForegroundColor
+                      = ConsoleColor.Yellow;
+            Console.ReadLine();
+            Console.WriteLine();
+            Typewrite("Fråga 7: XX p");
+            Console.WriteLine();
+            Typewrite("När du v");
+            Console.WriteLine();
+            Typewrite("Hur gammar är jag?");
+            Console.WriteLine();
+            Typewrite("1. 11 månader gammal.");
+            Console.WriteLine();
+            Typewrite("X. Jag fanns inte.");
+            Console.WriteLine();
+            Typewrite("2. Du fanns inte.");
+            Console.WriteLine();
+
+            while (true)
+            {
+
+                svar11 = Console.ReadLine().ToLower();
+
+                if (svar11 == "1")
+                {
+                    Console.ForegroundColor
+      = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Hahaha!! Jag har aldrig kunnat prata.");
+                    Console.WriteLine();
+                    Typewrite("Finns jag ens?");
+                    Console.WriteLine();
+                    Typewrite("Felaktigt SVAR!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga8();
+                    break;
+                }
+
+                if (svar11 == "x")
+                {
+                    Console.ForegroundColor
+      = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Vad menar du med att du inte fanns?");
+                    Console.WriteLine();
+                    Typewrite("What??");
+                    Console.WriteLine();
+                    Typewrite("FELAKTIGT SVAR!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga8();
+                    break;
+
+                }
+
+                if (svar11 == "2")
+                {
+                    Console.ForegroundColor
+                          = ConsoleColor.Green;
+                    Console.WriteLine();
+                    Typewrite("Jag skapades för ett par veckor sen");
+                    Console.WriteLine();
+                    Typewrite("Korrekt svar!!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.ReadLine();
+                    Console.ResetColor();
+                    fråga8();
+                    break;
+                }
 
 
-
+            }
 
         }
 

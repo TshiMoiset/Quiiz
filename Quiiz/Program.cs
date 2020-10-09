@@ -453,7 +453,7 @@ namespace Test
                 }
 
                 Console.ForegroundColor
-                                                               = ConsoleColor.Yellow;
+                      = ConsoleColor.Yellow;
                 Console.WriteLine();
                 Typewrite("Svara med 1, X eller 2!");
                 Console.WriteLine();
@@ -834,7 +834,7 @@ namespace Test
                 Console.WriteLine();
                 Typewrite("2. Jag vet inte.");
                 Console.WriteLine();
-
+                continue;
             }
 
         }
@@ -934,6 +934,7 @@ namespace Test
                 Console.WriteLine();
                 Typewrite("2. Du fanns inte.");
                 Console.WriteLine();
+                continue;
             }
 
         }
@@ -1029,6 +1030,7 @@ namespace Test
                 Console.WriteLine();
                 Typewrite("2. Nej");
                 Console.WriteLine();
+                continue;
             }
 
         }
@@ -1135,13 +1137,13 @@ namespace Test
             Console.WriteLine();
             Typewrite("Sista frågan.");
             Console.WriteLine();
-            Typewrite("Hur många sekunder finns det på ett helt år?");
+            Typewrite("Vad är 56 024 498 248 094 m/s i km/h?");
             Console.WriteLine();
-            Typewrite("1. 25 203 000s");
+            Typewrite("1. 342 658 345 235 642 km/h");
             Console.WriteLine();
-            Typewrite("X. 31 536 000s");
+            Typewrite("X. 201 688 193 693 138 km/h");
             Console.WriteLine();
-            Typewrite("2. 29 323 000s");
+            Typewrite("2. 453 552 235 756 352 km/h");
             Console.WriteLine();
 
             while (true)
@@ -1201,15 +1203,16 @@ namespace Test
                 }
 
                 Typewrite("Svara med 1, X eller 2!");
-                Typewrite("Hur många sekunder finns det på ett helt år?");
                 Console.WriteLine();
-                Typewrite("1. 25 203 000s");
+                Typewrite("Vad är 56 024 498 248 094 m/s i km/h?");
                 Console.WriteLine();
-                Typewrite("X. 31 536 000s");
+                Typewrite("1. 342 658 345 235 642 km/h");
                 Console.WriteLine();
-                Typewrite("2. 29 323 000s");
+                Typewrite("X. 201 688 193 693 138 km/h");
                 Console.WriteLine();
-
+                Typewrite("2. 453 552 235 756 352 km/h");
+                Console.WriteLine();
+                continue;
 
             }
         }

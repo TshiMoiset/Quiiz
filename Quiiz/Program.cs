@@ -577,15 +577,13 @@ namespace Test
             Console.WriteLine();
             Typewrite("Fråga 4: XX p");
             Console.WriteLine();
-            Typewrite("Vem har mest hår?");
+            Typewrite("Hur många sekunder har det gått mellan?");
             Console.WriteLine();
-            Typewrite("En Apa eller Människa?");
+            Typewrite("1. 713 547 000s");
             Console.WriteLine();
-            Typewrite("1. Apa.");
+            Typewrite("X. 459 854 000s");
             Console.WriteLine();
-            Typewrite("X. Människa.");
-            Console.WriteLine();
-            Typewrite("2. De har lika mycket.");
+            Typewrite("2. 631 065 600s");
             Console.WriteLine();
 
             while (true)
@@ -645,15 +643,11 @@ namespace Test
                 Console.WriteLine();
                 Typewrite("Svara med 1, X eller 2!");
                 Console.WriteLine();
-                Typewrite("Vem har mest hår?");
+                Typewrite("1. 713 547 000s");
                 Console.WriteLine();
-                Typewrite("En Apa eller Människa?");
+                Typewrite("X. 459 854 000s");
                 Console.WriteLine();
-                Typewrite("1. Apa.");
-                Console.WriteLine();
-                Typewrite("X. Människa.");
-                Console.WriteLine();
-                Typewrite("2. De har lika mycket.");
+                Typewrite("2. 631 065 600s");
                 Console.WriteLine();
                 continue;
 
@@ -1074,7 +1068,7 @@ namespace Test
                     Typewrite("Dina poäng: ");
                     Console.WriteLine();
                     Console.ResetColor();
-                    fråga9();
+                    fråga10();
                     break;
                 }
 
@@ -1090,7 +1084,7 @@ namespace Test
                     Typewrite("Dina poäng: ");
                     Console.WriteLine();
                     Console.ResetColor();
-                    fråga9();
+                    fråga10();
                     break;
 
                 }
@@ -1100,14 +1094,14 @@ namespace Test
                     Console.ForegroundColor
     = ConsoleColor.Red;
                     Console.WriteLine();
-                    Typewrite("Vad menar du med NEJ");
+                    Typewrite("Vad menar du med NEJ??");
                     Console.WriteLine();
                     Typewrite("Felaktigt SVAR!!");
                     Console.WriteLine();
                     Typewrite("Dina poäng: ");
                     Console.WriteLine();
                     Console.ResetColor();
-                    fråga9();
+                    fråga10();
                     break;
                 }
 
@@ -1128,6 +1122,117 @@ namespace Test
 
         }
 
+        static void fråga10()
+        {
+
+            string svar13;
+
+            Console.ForegroundColor
+                      = ConsoleColor.Yellow;
+            Console.ReadLine();
+            Console.WriteLine();
+            Typewrite("Fråga 10: XX p");
+            Console.WriteLine();
+            Typewrite("Sista frågan.");
+            Console.WriteLine();
+            Typewrite("Hur många sekunder finns det på ett helt år?");
+            Console.WriteLine();
+            Typewrite("1. 25 203 000s");
+            Console.WriteLine();
+            Typewrite("X. 31 536 000s");
+            Console.WriteLine();
+            Typewrite("2. 29 323 000s");
+            Console.WriteLine();
+
+            while (true)
+            {
+
+                svar13 = Console.ReadLine().ToLower();
+
+                if (svar13 == "1")
+                {
+                    Console.ForegroundColor
+      = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("FELAKTIGT SVAR!!");
+                    Console.WriteLine();
+                    Typewrite("Hahaha!!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    resultat();
+                    break;
+                }
+
+                if (svar13 == "x")
+                {
+                    Console.ForegroundColor
+      = ConsoleColor.Green;
+                    Console.WriteLine();
+                    Typewrite("Du hade bara tur.");
+                    Console.WriteLine();
+                    Typewrite("Grattis!!");
+                    Console.WriteLine();
+                    Typewrite("Korrekt svar!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    resultat();
+                    break;
+
+                }
+
+                if (svar13 == "2")
+                {
+                    Console.ForegroundColor
+    = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("FELAKTIGT SVAR!!");
+                    Console.WriteLine();
+                    Typewrite("Hahaha!!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    resultat();
+                    break;
+                }
+
+                Typewrite("Svara med 1, X eller 2!");
+                Typewrite("Hur många sekunder finns det på ett helt år?");
+                Console.WriteLine();
+                Typewrite("1. 25 203 000s");
+                Console.WriteLine();
+                Typewrite("X. 31 536 000s");
+                Console.WriteLine();
+                Typewrite("2. 29 323 000s");
+                Console.WriteLine();
+
+
+            }
+        }
+
+        static void resultat()
+        {
+            Console.ForegroundColor
+        = ConsoleColor.Yellow;
+            Console.ReadLine();
+            Console.WriteLine();
+            Typewrite("Tryck på ENTER för att se ditt resultat");
+
+
+
+
+
+
+
+
+
+
+
+        }
         static void Typewrite(string message)
         {
             for (int i = 0; i < message.Length; i++)

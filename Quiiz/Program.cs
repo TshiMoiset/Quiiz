@@ -556,7 +556,7 @@ namespace Test
                 Typewrite("Vad är meningen med livet?");
                 Console.WriteLine();
                 Typewrite("1. Att leva så gott man kan.");
-                Console.ReadLine();
+                Console.WriteLine();
                 Typewrite("X. Jag vet inte");
                 Console.WriteLine("");
                 Typewrite("2. Du vet.");
@@ -741,6 +741,7 @@ namespace Test
 
                 Console.WriteLine();
                 Typewrite("Svara med 1, X eller 2!");
+                Console.WriteLine();
                 Typewrite("Vilken färg har spegeln?");
                 Console.WriteLine();
                 Typewrite("1. Har spegeln färg?.");
@@ -828,6 +829,17 @@ namespace Test
                     break;
                 }
 
+                Console.WriteLine();
+                Typewrite("Svara med 1, X eller 2!");
+                Console.WriteLine();
+                Typewrite("Är det här en bra fråga?");
+                Console.WriteLine();
+                Typewrite("1. Ja.");
+                Console.WriteLine();
+                Typewrite("X. Är det här ett bra svar?");
+                Console.WriteLine();
+                Typewrite("2. Jag vet inte.");
+                Console.WriteLine();
 
             }
 
@@ -913,7 +925,21 @@ namespace Test
                     break;
                 }
 
-
+                Console.WriteLine();
+                Typewrite("Svara med 1, X eller 2!");
+                Console.WriteLine();
+                Typewrite("Fråga 7: XX p");
+                Console.WriteLine();
+                Typewrite("När du var i min ålder kunde du inte prata.");
+                Console.WriteLine();
+                Typewrite("Hur gammar är jag?");
+                Console.WriteLine();
+                Typewrite("1. 11 månader gammal.");
+                Console.WriteLine();
+                Typewrite("X. Jag fanns inte.");
+                Console.WriteLine();
+                Typewrite("2. Du fanns inte.");
+                Console.WriteLine();
             }
 
         }
@@ -927,17 +953,17 @@ namespace Test
                       = ConsoleColor.Yellow;
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga 7: XX p");
+            Typewrite("Fråga 8: XX p");
             Console.WriteLine();
-            Typewrite("När du v");
+            Typewrite("Om du njuter av att slösa tid, är den tiden bortkastad?");
             Console.WriteLine();
-            Typewrite("Hur gammar är jag?");
+            Typewrite("");
             Console.WriteLine();
-            Typewrite("1. 11 månader gammal.");
+            Typewrite("1. Ja");
             Console.WriteLine();
-            Typewrite("X. Jag fanns inte.");
+            Typewrite("X. Det är upp till än själv att bestämma.");
             Console.WriteLine();
-            Typewrite("2. Du fanns inte.");
+            Typewrite("2. Nej");
             Console.WriteLine();
 
             while (true)
@@ -950,34 +976,30 @@ namespace Test
                     Console.ForegroundColor
       = ConsoleColor.Red;
                     Console.WriteLine();
-                    Typewrite("Hahaha!! Jag har aldrig kunnat prata.");
-                    Console.WriteLine();
-                    Typewrite("Finns jag ens?");
+                    Typewrite("Hahahah!!!");
                     Console.WriteLine();
                     Typewrite("Felaktigt SVAR!!");
                     Console.WriteLine();
                     Typewrite("Dina poäng: ");
                     Console.WriteLine();
                     Console.ResetColor();
-                    fråga8();
+                    fråga9();
                     break;
                 }
 
                 if (svar11 == "x")
                 {
                     Console.ForegroundColor
-      = ConsoleColor.Red;
+      = ConsoleColor.Green;
                     Console.WriteLine();
-                    Typewrite("Vad menar du med att du inte fanns?");
-                    Console.WriteLine();
-                    Typewrite("What??");
+                    Typewrite("Korrekt Svar!!");
                     Console.WriteLine();
                     Typewrite("FELAKTIGT SVAR!!");
                     Console.WriteLine();
                     Typewrite("Dina poäng: ");
                     Console.WriteLine();
                     Console.ResetColor();
-                    fråga8();
+                    fråga9();
                     break;
 
                 }
@@ -985,19 +1007,122 @@ namespace Test
                 if (svar11 == "2")
                 {
                     Console.ForegroundColor
-                          = ConsoleColor.Green;
+    = ConsoleColor.Red;
                     Console.WriteLine();
-                    Typewrite("Jag skapades för ett par veckor sen");
+                    Typewrite("Hahahah!!!");
                     Console.WriteLine();
-                    Typewrite("Korrekt svar!!!");
+                    Typewrite("Felaktigt SVAR!!");
                     Console.WriteLine();
                     Typewrite("Dina poäng: ");
-                    Console.ReadLine();
+                    Console.WriteLine();
                     Console.ResetColor();
-                    fråga8();
+                    fråga9();
                     break;
                 }
 
+                Console.WriteLine();
+                Typewrite("Svara med 1, X eller 2!");
+                Console.WriteLine();
+                Typewrite("Fråga 8: XX p");
+                Console.WriteLine();
+                Typewrite("Om du njuter av att slösa tid, är den tiden bortkastad?");
+                Console.WriteLine();
+                Typewrite("");
+                Console.WriteLine();
+                Typewrite("1. Ja");
+                Console.WriteLine();
+                Typewrite("X. Det är upp till än själv att bestämma.");
+                Console.WriteLine();
+                Typewrite("2. Nej");
+                Console.WriteLine();
+            }
+
+        }
+
+        static void fråga9()
+        {
+
+            string svar12;
+
+            Console.ForegroundColor
+                      = ConsoleColor.Yellow;
+            Console.ReadLine();
+            Console.WriteLine();
+            Typewrite("Fråga 9: XX p");
+            Console.WriteLine();
+            Typewrite("Vad är 1-800 273 8255?");
+            Console.WriteLine();
+            Typewrite("1. En låt");
+            Console.WriteLine();
+            Typewrite("X. Koordinater");
+            Console.WriteLine();
+            Typewrite("2. Nej");
+            Console.WriteLine();
+
+            while (true)
+            {
+
+                svar12 = Console.ReadLine().ToLower();
+
+                if (svar12 == "1")
+                {
+                    Console.ForegroundColor
+      = ConsoleColor.Green;
+                    Console.WriteLine();
+                    Typewrite("Korrekt svar!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga9();
+                    break;
+                }
+
+                if (svar12 == "x")
+                {
+                    Console.ForegroundColor
+      = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Koordinater till vad?");
+                    Console.WriteLine();
+                    Typewrite("FELAKTIGT SVAR!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga9();
+                    break;
+
+                }
+
+                if (svar12 == "2")
+                {
+                    Console.ForegroundColor
+    = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Vad menar du med NEJ");
+                    Console.WriteLine();
+                    Typewrite("Felaktigt SVAR!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga9();
+                    break;
+                }
+
+                Console.WriteLine();
+                Typewrite("Svara med 1, X eller 2!");
+                Console.WriteLine();
+                Typewrite("Vad är 1-800 273 8255?");
+                Console.WriteLine();
+                Typewrite("1. En låt");
+                Console.WriteLine();
+                Typewrite("X. Koordinater");
+                Console.WriteLine();
+                Typewrite("2. Nej");
+                Console.WriteLine();
+                continue;
 
             }
 
@@ -1008,7 +1133,7 @@ namespace Test
             for (int i = 0; i < message.Length; i++)
             {
                 Console.Write(message[i]);
-                System.Threading.Thread.Sleep(1);
+                System.Threading.Thread.Sleep(10);
             }
         }
     }

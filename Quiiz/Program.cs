@@ -752,30 +752,95 @@ namespace Test
                 continue;
             }
 
-            static void fråga6()
+        }
+
+        static void fråga6()
+        {
+
+            string svar8;
+
+            Console.ForegroundColor
+                      = ConsoleColor.Yellow;
+            Console.ReadLine();
+            Console.WriteLine();
+            Typewrite("Fråga 6: XX p");
+            Console.WriteLine();
+            Typewrite("Är det här en bra fråga?");
+            Console.WriteLine();
+            Typewrite("1. Ja.");
+            Console.WriteLine();
+            Typewrite("X. Är det här ett bra svar?");
+            Console.WriteLine();
+            Typewrite("2. Jag vet inte.");
+            Console.WriteLine();
+
+            while (true)
             {
 
-                string svar8;
+                svar8 = Console.ReadLine().ToLower();
 
-                Console.ForegroundColor
-                          = ConsoleColor.Yellow;
-                Console.ReadLine();
-                Console.WriteLine();
-                Typewrite("Fråga 6: XX p");
-                Console.WriteLine();
-                Typewrite("Är det här en bra fråga?");
-                Console.WriteLine();
-                Typewrite("1. Ja.");
-                Console.WriteLine();
-                Typewrite("X. Är det här ett bra svar?");
-                Console.WriteLine();
-                Typewrite("2. Jag vet inte.");
-                Console.WriteLine();
+                if (svar8 == "1")
+                {
+                    Console.ForegroundColor
+      = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Hur vet du det?");
+                    Console.WriteLine();
+                    Typewrite("Felaktigt SVAR!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga7();
+                    break;
+                }
 
+                if (svar8 == "x")
+                {
+                    Console.ForegroundColor
+      = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Sen när blev du en psykolog?");
+                    Console.WriteLine();
+                    Typewrite("JAG är den som ställer frågorna här!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga7();
+                    break;
 
+                }
+
+                if (svar8 == "2")
+                {
+                    Console.ForegroundColor
+                          = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("........................................");
+                    Console.WriteLine();
+                    Typewrite("FELAKTIGT SVAR!!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.ReadLine();
+                    Console.ResetColor();
+                    fråga7();
+                    break;
+                }
 
 
             }
+
+        }
+
+        static void fråga7()
+        {
+
+
+
+
+
+
 
         }
 

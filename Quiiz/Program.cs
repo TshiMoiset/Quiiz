@@ -461,14 +461,107 @@ namespace Test
 
         static void fråga3()
         {
+
+            string svar6;
+            Typewrite("Fråga")
             Console.WriteLine();
-            Typewrite("Wwwwwwwwwwwwwwwwwwwwwwww.......................................................................");
+            Typewrite("Vad är meningen med livet?");
             Console.WriteLine();
+            Typewrite("1. Att leva så gott man kan.");
             Console.ReadLine();
+            Typewrite("X. Jag vet inte");
+            Console.WriteLine("");
+            Typewrite("2. Du vet.");
+            Console.WriteLine();
+
+            while (true)
+            {
+
+                svar6 = Console.ReadLine().ToLower();
+
+                if (svar6 == "1")
+                {
+
+                    Console.ForegroundColor
+                    = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Hahaha!! det säger alla");
+                    Console.WriteLine();
+                    Typewrite("Bara för att får du fel på frågan, Hahaha!");
+                    Console.WriteLine();
+                    Typewrite("0 p");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga4();
+                    break;
+                }
+
+                if (svar6 == "x")
+                {
+
+                    Console.ForegroundColor
+                    = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("?????????");
+                    Console.WriteLine();
+                    Typewrite("Om inte du vet, vem ska då veta?");
+                    Console.WriteLine();
+                    Typewrite("0 p");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga4();
+                    break;
+                }
+
+                if (svar6 == "2")
+                {
+
+                    Console.ForegroundColor
+                    = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Hur ska jag veta det??");
+                    Console.WriteLine();
+                    Typewrite("Jag finns inte.");
+                    Console.WriteLine();
+                    Typewrite("0 p");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga4();
+                    break;
+                }
+
+                Console.WriteLine();
+                Typewrite("Svara med 1, X eller 2!");
+                Console.WriteLine();
+                Typewrite("Vad är meningen med livet?");
+                Console.WriteLine();
+                Typewrite("1. Att leva så gott man kan.");
+                Console.ReadLine();
+                Typewrite("X. Jag vet inte");
+                Console.WriteLine("");
+                Typewrite("2. Du vet.");
+                Console.WriteLine();
+                continue;
+            }
+
 
 
         }
 
+        static void fråga4()
+        {
+
+            string svar7;
+
+            Console.ForegroundColor
+            = ConsoleColor.Yellow;
+
+            Console.WriteLine();
+            Typewrite("Vem ")
+
+
+
+        }
 
 
 

@@ -8,6 +8,9 @@ namespace Test
         static void Main(string[] args)
         {
 
+
+
+
             String Svar;
 
             Console.ForegroundColor
@@ -37,6 +40,10 @@ namespace Test
 
                     Typewrite("Dina antal poäng kommer i slutet att ge dig ett resultat i form av ett betyg A - F, då A är bäst och F för FALIUER.");
                     Console.WriteLine();
+
+                    Typewrite("Efter att du har svarat på en fråga trycker du" + " (ENTER) för nästa.");
+                    Console.WriteLine();
+
                     Typewrite("Got it?");
                     Console.WriteLine();
                     Redo();
@@ -56,6 +63,9 @@ namespace Test
                     Console.WriteLine();
 
                     Typewrite("Dina antal poäng kommer i slutet att ge dig ett resultat i form av ett betyg A - F, då A är bäst och F för FALIUER.");
+                    Console.WriteLine();
+
+                    Typewrite("Efter att du har svarat på en fråga trycker du" + " (ENTER) för nästa.");
                     Console.WriteLine();
 
                     Typewrite("Got it?");
@@ -370,6 +380,7 @@ namespace Test
 
             Console.ForegroundColor
                 = ConsoleColor.Yellow;
+            Console.ReadLine();
             Console.WriteLine();
             Typewrite("Fråga 2: XX Poäng");
             Console.WriteLine();
@@ -462,15 +473,20 @@ namespace Test
         static void fråga3()
         {
 
+            Console.ForegroundColor
+                                = ConsoleColor.Yellow;
+
             string svar6;
-            Typewrite("Fråga")
+            Console.ReadLine();
+            Console.WriteLine();
+            Typewrite("Fråga 3: XX p");
             Console.WriteLine();
             Typewrite("Vad är meningen med livet?");
             Console.WriteLine();
             Typewrite("1. Att leva så gott man kan.");
-            Console.ReadLine();
+            Console.WriteLine();
             Typewrite("X. Jag vet inte");
-            Console.WriteLine("");
+            Console.WriteLine();
             Typewrite("2. Du vet.");
             Console.WriteLine();
 
@@ -506,6 +522,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Om inte du vet, vem ska då veta?");
                     Console.WriteLine();
+                    Typewrite("Vad vet du?");
+                    Console.WriteLine();
+                    Typewrite("Vi får se hur det går i nästa fråga.");
+                    Console.WriteLine();
                     Typewrite("0 p");
                     Console.WriteLine();
                     Console.ResetColor();
@@ -521,7 +541,7 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Hur ska jag veta det??");
                     Console.WriteLine();
-                    Typewrite("Jag finns inte.");
+                    Typewrite("Jag finns inte!!");
                     Console.WriteLine();
                     Typewrite("0 p");
                     Console.WriteLine();
@@ -544,8 +564,6 @@ namespace Test
                 continue;
             }
 
-
-
         }
 
         static void fråga4()
@@ -555,36 +573,211 @@ namespace Test
 
             Console.ForegroundColor
             = ConsoleColor.Yellow;
-
+            Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Vem ")
+            Typewrite("Fråga 4: XX p");
+            Console.WriteLine();
+            Typewrite("Vem har mest hår?");
+            Console.WriteLine();
+            Typewrite("En Apa eller Människa?");
+            Console.WriteLine();
+            Typewrite("1. Apa.");
+            Console.WriteLine();
+            Typewrite("X. Människa.");
+            Console.WriteLine();
+            Typewrite("2. De har lika mycket.");
+            Console.WriteLine();
 
+            while (true)
+            {
 
+                svar7 = Console.ReadLine().ToLower();
+
+                if (svar7 == "1")
+                {
+                    Console.ForegroundColor
+      = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Hahah!!");
+                    Console.WriteLine();
+                    Typewrite("FELAKTIGT SVAR!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga5();
+                    break;
+                }
+
+                if (svar7 == "x")
+                {
+                    Console.ForegroundColor
+      = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Hahah!!");
+                    Console.WriteLine();
+                    Typewrite("FELAKTIGT SVAR!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga5();
+                    break;
+
+                }
+
+                if (svar7 == "2")
+                {
+                    Console.ForegroundColor
+                          = ConsoleColor.Green;
+                    Console.WriteLine();
+                    Typewrite("Korrekt svar!!");
+                    Console.WriteLine();
+                    Typewrite("Grattis!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.ReadLine();
+                    Console.ResetColor();
+                    fråga5();
+                    break;
+                }
+
+                Console.WriteLine();
+                Typewrite("Svara med 1, X eller 2!");
+                Console.WriteLine();
+                Typewrite("Vem har mest hår?");
+                Console.WriteLine();
+                Typewrite("En Apa eller Människa?");
+                Console.WriteLine();
+                Typewrite("1. Apa.");
+                Console.WriteLine();
+                Typewrite("X. Människa.");
+                Console.WriteLine();
+                Typewrite("2. De har lika mycket.");
+                Console.WriteLine();
+                continue;
+
+            }
 
         }
 
+        static void fråga5()
+        {
+
+            string svar8;
+
+            Console.ForegroundColor
+                      = ConsoleColor.Yellow;
+            Console.ReadLine();
+            Console.WriteLine();
+            Typewrite("Fråga 5: XX p");
+            Console.WriteLine();
+            Typewrite("Vilken färg har spegeln?");
+            Console.WriteLine();
+            Typewrite("1. Har spegeln färg?.");
+            Console.WriteLine();
+            Typewrite("X. Vet inte.");
+            Console.WriteLine();
+            Typewrite("2. Spegeln har ingen färg .");
+            Console.WriteLine();
+
+            while (true)
+            {
+
+                svar8 = Console.ReadLine().ToLower();
+
+                if (svar8 == "1")
+                {
+                    Console.ForegroundColor
+      = ConsoleColor.Green;
+                    Console.WriteLine();
+                    Typewrite("Bra där!!!");
+                    Console.WriteLine();
+                    Typewrite("HELT RÄTT!!");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga6();
+                    break;
+                }
+
+                if (svar8 == "x")
+                {
+                    Console.ForegroundColor
+      = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Hahah!!");
+                    Console.WriteLine();
+                    Typewrite("FELAKTIGT SVAR!!");
+                    Console.WriteLine();
+                    Typewrite("Kommer du att svara sådär på alla frågor?");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.WriteLine();
+                    Console.ResetColor();
+                    fråga6();
+                    break;
+
+                }
+
+                if (svar8 == "2")
+                {
+                    Console.ForegroundColor
+                          = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Typewrite("Spegeln har visst en färg!");
+                    Console.WriteLine();
+                    Typewrite("Den har får färgen av omgivningen.");
+                    Console.WriteLine();
+                    Typewrite("Om du vinklar spegeln på en röd matta blir spegeln röd.");
+                    Console.WriteLine();
+                    Typewrite("Dina poäng: ");
+                    Console.ReadLine();
+                    Console.ResetColor();
+                    fråga6();
+                    break;
+                }
+
+                Console.WriteLine();
+                Typewrite("Svara med 1, X eller 2!");
+                Typewrite("Vilken färg har spegeln?");
+                Console.WriteLine();
+                Typewrite("1. Har spegeln färg?.");
+                Console.WriteLine();
+                Typewrite("X. Vet inte.");
+                Console.WriteLine();
+                Typewrite("2. Spegeln har ingen färg .");
+                Console.WriteLine();
+                continue;
+            }
+
+            static void fråga6()
+            {
+
+                string svar8;
+
+                Console.ForegroundColor
+                          = ConsoleColor.Yellow;
+                Console.ReadLine();
+                Console.WriteLine();
+                Typewrite("Fråga 6: XX p");
+                Console.WriteLine();
+                Typewrite("Är det här en bra fråga?");
+                Console.WriteLine();
+                Typewrite("1. Ja.");
+                Console.WriteLine();
+                Typewrite("X. Är det här ett bra svar?");
+                Console.WriteLine();
+                Typewrite("2. Jag vet inte.");
+                Console.WriteLine();
 
 
 
 
+            }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }
 
         static void Typewrite(string message)
         {

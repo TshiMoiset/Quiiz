@@ -890,7 +890,7 @@ namespace Test
                     Console.WriteLine();
 
                     Console.ForegroundColor
-          = ConsoleColor.Red;
+          = ConsoleColor.Cyan;
                     Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
@@ -912,7 +912,7 @@ namespace Test
                     Console.WriteLine();
 
                     Console.ForegroundColor
-                       = ConsoleColor.Red;
+                       = ConsoleColor.Cyan;
                     Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();

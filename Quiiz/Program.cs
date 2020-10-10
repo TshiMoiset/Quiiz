@@ -266,13 +266,13 @@ namespace Test
 
 
             Random number = new Random();
-            int score = number.Next(90, 150);
+            int score = number.Next(80, 150);
 
             String Svar4;
 
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga1: " + score + " Poäng");
+            Typewrite("Fråga 1: " + score + " Poäng");
             Console.WriteLine();
             Typewrite("Vad heter USAs första president?");
             Console.WriteLine();
@@ -301,7 +301,8 @@ namespace Test
 
                     Console.ForegroundColor
                                                 = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: " + score + " p");
+                    Typewrite("InFörskaffade Poäng: " + score + " p");
+                    Console.WriteLine();
                     Console.ResetColor();
                     Console.WriteLine();
                     Fråga2();
@@ -321,7 +322,7 @@ namespace Test
 
                     Console.ForegroundColor
                                                               = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     Console.WriteLine();
@@ -342,8 +343,8 @@ namespace Test
                     Console.WriteLine();
 
                     Console.ForegroundColor
-                                                                             = ConsoleColor.Blue;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                                 = ConsoleColor.Cyan;
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     Console.WriteLine();
@@ -374,7 +375,7 @@ namespace Test
         {
 
             Random number = new Random();
-            int score = number.Next(70, 90);
+            int score = number.Next(50, 90);
 
             string svar5;
 
@@ -411,7 +412,7 @@ namespace Test
 
                     Console.ForegroundColor
                     = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     Console.WriteLine();
@@ -432,7 +433,7 @@ namespace Test
 
                     Console.ForegroundColor
                                       = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     Console.WriteLine();
@@ -449,7 +450,10 @@ namespace Test
                     Typewrite("Korrekt Svar!");
                     Console.WriteLine();
 
-                    Typewrite("Förskaffade Poäng: " + score + " p");
+                    Console.ForegroundColor
+                                      = ConsoleColor.Cyan;
+                    Typewrite("InFörskaffade Poäng: " + score + " p");
+                    Console.WriteLine();
                     Console.ResetColor();
                     Console.WriteLine();
                     fråga3();
@@ -516,9 +520,10 @@ namespace Test
 
                     Console.ForegroundColor
                     = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga4();
                     break;
                 }
@@ -540,9 +545,10 @@ namespace Test
 
                     Console.ForegroundColor
                = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga4();
                     break;
                 }
@@ -560,9 +566,10 @@ namespace Test
 
                     Console.ForegroundColor
                = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga4();
                     break;
                 }
@@ -588,7 +595,7 @@ namespace Test
 
 
             Random number = new Random();
-            int score = number.Next(800, 1000);
+            int score = number.Next(500, 800);
 
             string svar7;
 
@@ -598,7 +605,7 @@ namespace Test
             Console.WriteLine();
             Typewrite("Fråga 4: " + score + " Poäng");
             Console.WriteLine();
-            Typewrite("Hur många sekunder har det gått mellan 2000 & 2019?");
+            Typewrite("Hur många sekunder har det gått mellan åren 2000 - 2019?");
             Console.WriteLine();
             Typewrite("1. 713 547 000s");
             Console.WriteLine();
@@ -624,9 +631,10 @@ namespace Test
 
                     Console.ForegroundColor
 = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga5();
                     break;
                 }
@@ -643,9 +651,10 @@ namespace Test
 
                     Console.ForegroundColor
                                               = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga5();
                     break;
 
@@ -663,9 +672,10 @@ namespace Test
 
                     Console.ForegroundColor
                                               = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: " + score + " p");
-                    Console.ReadLine();
+                    Typewrite("InFörskaffade Poäng: " + score + " p");
+                    Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga5();
                     break;
                 }
@@ -673,7 +683,7 @@ namespace Test
                 Console.WriteLine();
                 Typewrite("Svara med 1, X eller 2!");
                 Console.WriteLine();
-                Typewrite("Hur många sekunder har det gått mellan 2000 & 2019?");
+                Typewrite("Hur många sekunder har det gått mellan åren 2000 - 2019?");
                 Console.WriteLine();
                 Typewrite("1. 713 547 000s");
                 Console.WriteLine();
@@ -692,7 +702,7 @@ namespace Test
 
 
             Random number = new Random();
-            int score = number.Next(1000, 1300);
+            int score = number.Next(500, 300);
 
             string svar8;
 
@@ -728,9 +738,10 @@ namespace Test
 
                     Console.ForegroundColor
      = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: " + score + " p");
+                    Typewrite("InFörskaffade Poäng: " + score + " p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga6();
                     break;
                 }
@@ -749,9 +760,10 @@ namespace Test
 
                     Console.ForegroundColor
    = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga6();
                     break;
 
@@ -771,9 +783,10 @@ namespace Test
 
                     Console.ForegroundColor
       = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
-                    Console.ReadLine();
+                    Typewrite("InFörskaffade Poäng: 0 p");
+                    Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga6();
                     break;
                 }
@@ -798,7 +811,7 @@ namespace Test
         {
 
             Random number = new Random();
-            int score = number.Next(200, 450);
+            int score = number.Next(1500, 2500);
 
             string svar9;
 
@@ -834,9 +847,10 @@ namespace Test
 
                     Console.ForegroundColor
       = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga7();
                     break;
                 }
@@ -853,9 +867,10 @@ namespace Test
 
                     Console.ForegroundColor
  = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga7();
                     break;
 
@@ -873,9 +888,10 @@ namespace Test
 
                     Console.ForegroundColor
  = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
-                    Console.ReadLine();
+                    Typewrite("InFörskaffade Poäng: 0 p");
+                    Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga7();
                     break;
                 }
@@ -901,7 +917,7 @@ namespace Test
 
 
             Random number = new Random();
-            int score = number.Next(1300, 1500);
+            int score = number.Next(230, 545);
 
             string svar10;
 
@@ -941,9 +957,10 @@ namespace Test
 
                     Console.ForegroundColor
           = ConsoleColor.Red;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga8();
                     break;
                 }
@@ -962,9 +979,10 @@ namespace Test
 
                     Console.ForegroundColor
                        = ConsoleColor.Red;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga8();
                     break;
 
@@ -982,9 +1000,10 @@ namespace Test
 
                     Console.ForegroundColor
                          = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng:" + score + " p");
-                    Console.ReadLine();
+                    Typewrite("InFörskaffade Poäng:" + score + " p");
+                    Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga8();
                     break;
                 }
@@ -1011,7 +1030,7 @@ namespace Test
         {
 
             Random number = new Random();
-            int score = number.Next(1300, 1500);
+            int score = number.Next(800, 400);
             string svar11;
 
             Console.ForegroundColor
@@ -1021,8 +1040,6 @@ namespace Test
             Typewrite("Fråga 8: " + score + " Poäng");
             Console.WriteLine();
             Typewrite("Om du njuter av att slösa tid, är den tiden bortkastad?");
-            Console.WriteLine();
-            Typewrite("");
             Console.WriteLine();
             Typewrite("1. Ja");
             Console.WriteLine();
@@ -1048,9 +1065,10 @@ namespace Test
 
                     Console.ForegroundColor
       = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga9();
                     break;
                 }
@@ -1067,9 +1085,10 @@ namespace Test
 
                     Console.ForegroundColor
    = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga9();
                     break;
 
@@ -1087,9 +1106,10 @@ namespace Test
 
                     Console.ForegroundColor
     = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga9();
                     break;
                 }
@@ -1100,8 +1120,6 @@ namespace Test
                 Typewrite("Fråga 8: XX p");
                 Console.WriteLine();
                 Typewrite("Om du njuter av att slösa tid, är den tiden bortkastad?");
-                Console.WriteLine();
-                Typewrite("");
                 Console.WriteLine();
                 Typewrite("1. Ja");
                 Console.WriteLine();
@@ -1119,7 +1137,7 @@ namespace Test
 
 
             Random number = new Random();
-            int score = number.Next(1300, 1500);
+            int score = number.Next(100, 350);
             string svar12;
 
             Console.ForegroundColor
@@ -1150,12 +1168,12 @@ namespace Test
                     Typewrite("Korrekt svar!!");
                     Console.WriteLine();
 
-
                     Console.ForegroundColor
      = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: " + score + " p");
+                    Typewrite("InFörskaffade Poäng: " + score + " p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga10();
                     break;
                 }
@@ -1172,9 +1190,10 @@ namespace Test
 
                     Console.ForegroundColor
      = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga10();
                     break;
 
@@ -1192,9 +1211,10 @@ namespace Test
 
                     Console.ForegroundColor
         = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     fråga10();
                     break;
                 }
@@ -1220,7 +1240,7 @@ namespace Test
         {
 
             Random number = new Random();
-            int score = number.Next(2000, 2500);
+            int score = number.Next(500, 900);
             string svar13;
 
             Console.ForegroundColor
@@ -1257,9 +1277,10 @@ namespace Test
 
                     Console.ForegroundColor
         = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     resultat();
                     break;
                 }
@@ -1278,9 +1299,10 @@ namespace Test
 
                     Console.ForegroundColor
       = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: " + score + " p");
+                    Typewrite("InFörskaffade Poäng: " + score + " p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     resultat();
                     break;
 
@@ -1298,9 +1320,10 @@ namespace Test
 
                     Console.ForegroundColor
                        = ConsoleColor.Cyan;
-                    Typewrite("Förskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
+                    Console.WriteLine();
                     resultat();
                     break;
                 }

@@ -123,26 +123,26 @@ namespace Test
         {
 
             int Hp;
-            Hp = 5000;
+            Hp = 10000;
             String Svar3;
 
             Typewrite("Snabb fråga innan vi börjar vilket betyg tror du att du kommer få från A - F?");
             Console.WriteLine();
             Typewrite("A = " + Hp + " p");
             Console.WriteLine();
-            Typewrite("B = " + (Hp - 1250) + " p");
+            Typewrite("B = " + (Hp - 2500) + " p");
             Console.WriteLine();
 
-            Typewrite("C = " + (Hp - 2500) + " p");
+            Typewrite("C = " + (Hp - 3500) + " p");
             Console.WriteLine();
 
-            Typewrite("D = " + (Hp - 3250) + " p");
+            Typewrite("D = " + (Hp - 4500) + " p");
             Console.WriteLine();
 
-            Typewrite("E = " + (Hp - 3750) + " p");
+            Typewrite("E = " + (Hp - 5500) + " p");
             Console.WriteLine();
 
-            Typewrite("F = " + (Hp - 5000) + " p");
+            Typewrite("F = " + (Hp - 6500) + " p");
             Console.WriteLine();
 
 
@@ -702,7 +702,7 @@ namespace Test
 
 
             Random number = new Random();
-            int score = number.Next(500, 300);
+            int score = number.Next(300, 500);
 
             string svar8;
 
@@ -1030,7 +1030,7 @@ namespace Test
         {
 
             Random number = new Random();
-            int score = number.Next(800, 400);
+            int score = number.Next(400, 800);
             string svar11;
 
             Console.ForegroundColor
@@ -1345,19 +1345,169 @@ namespace Test
 
         static void resultat()
         {
+
+            int Hp;
+            Hp = 10000;
+
             Console.ForegroundColor
         = ConsoleColor.Yellow;
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Tryck på ENTER för att se ditt resultat");
+            Typewrite("Tryck på ENTER för att se ditt resultat!");
+            Console.WriteLine();
+            Console.ReadLine();
+
+            Typewrite("A = " + Hp + " p");
+            Console.WriteLine();
+            Typewrite("B = " + (Hp - 2500) + " p");
+            Console.WriteLine();
+
+            Typewrite("C = " + (Hp - 3500) + " p");
+            Console.WriteLine();
+
+            Typewrite("D = " + (Hp - 4500) + " p");
+            Console.WriteLine();
+
+            Typewrite("E = " + (Hp - 5500) + " p");
+            Console.WriteLine();
+
+            Typewrite("F = " + (Hp - 6500) + " p");
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Typewrite("Tryck ENTER för att beräkna ditt resultat!");
+            Console.WriteLine();
+            Console.ReadLine();
+
+            Console.ForegroundColor
+                            = ConsoleColor.Green;
+            Typewrite2("Beräknar resultat:.........2%..........14%...........24%............32%...............47%.................55%....");
+            Console.WriteLine();
+            Typewrite2("................61%................72%..........89%.............96%...........100%");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.ForegroundColor
+                = ConsoleColor.Yellow;
+
+            Typewrite3("#Quiiz" + "(Walsta,G)");
+            Console.WriteLine();
+            Typewrite3("#Includera Frågor" + "'FrÅGa 1-10'");
+            Console.WriteLine();
+            Typewrite3("All Function[] {");
+            Console.WriteLine();
+            Typewrite3("System Svar = HuvudSystem:::Svar_Korrekt!!%¤[]:");
+            Console.WriteLine();
+            Typewrite3("Q -> Visning [Tillfärlig_encrypterings_nyckel[] ]");
+            Console.WriteLine();
+            Typewrite3("Q -> Kalkylerar: Analyserar[LDFEIH242&434]");
+            Console.WriteLine();
+            Typewrite3("HuvudSystem:::Tillgång[Tillfärlig_encrypterings_nyckel[[[]]]]");
+            Console.WriteLine();
+            Typewrite3("HuvudSystem:::SvarTillgång ->Öppnar[IOAND03E30FE]");
+            Console.WriteLine();
+            Typewrite3("Använder HuvudSystem:::LightControl;");
+            Console.WriteLine();
+            Typewrite3("Ljus*i = hämtar_inställningar_Regler[Nurvarande[]]i");
+            Console.WriteLine();
+            Typewrite3("}");
+            Console.WriteLine();
+            Console.WriteLine();
+            Typewrite3("Gör {");
+            Console.WriteLine();
+            Typewrite3("TillåtTillträde_Vem->Spelare[HP-DATOR]");
+            Console.WriteLine();
+            Typewrite3("D7EJNI9394. PRIO1::[HIGHEST]:");
+            Console.WriteLine();
+            Typewrite3("!->[00.769]");
+            Console.WriteLine();
+            Typewrite3("!->Färg[rgb(240,255,240)]");
+            Console.WriteLine();
+            Typewrite3("}");
+            Console.WriteLine();
+            Console.WriteLine();
+            Typewrite3("Hämta {");
+            Console.WriteLine();
+            Typewrite3("Tillträde->WALSTA.G:::[SystemUppdaterar0.34542M");
+            Console.WriteLine();
+            Typewrite3("#Fråga 1 - Fråga 3->Svar:::********");
+            Console.WriteLine();
+            Typewrite3("#Fråga 4 - Fråga 7->Svar:::********");
+            Console.WriteLine();
+            Typewrite3("#Fråga 8 - Fråga 10->Svar:::********");
+            Console.WriteLine();
+            Typewrite3("System:::Tillträde 1File[3VQEEDWN]");
+            Console.WriteLine();
+            Typewrite3("System:::Tillträde 2File[9EDCRCE5]");
+            Console.WriteLine();
+            Typewrite3("System:::Tillträde 3File[QYFQ8DST]");
+            Console.WriteLine();
+            Typewrite3("System:::Tillträde 4File[DCJAUC52]");
+            Console.WriteLine();
+            Typewrite3("}");
+            Console.WriteLine();
+            Console.WriteLine();
+            Typewrite3("Funktion Huvud2[] {");
+            Console.WriteLine();
+            Typewrite3("Tillträde[Tillfärlig_encrypterings_nyckel]");
+            Console.WriteLine();
+            Typewrite3("Resultat:::Överför[]");
+            Console.WriteLine();
+            Typewrite3("FW_UnBind[]");
+            Console.WriteLine();
+            Typewrite3("FW::QUIIZ_Backdörr_Kopplar");
+            Console.WriteLine();
+            Typewrite3("Tillåt_TILLTRÄDE_WALSTA.G[LÅSER UPP]");
+            Console.WriteLine();
+            Typewrite3("4K-KALKYLERAR");
+            Console.WriteLine();
+            Typewrite3("}");
+            Console.WriteLine();
+            Console.WriteLine();
+            Typewrite3("System ->> Analysera meny[INNEHÅLL]");
+            Console.WriteLine();
+            Typewrite3("File-Innehåll[[ÖPPNA]]");
+            Console.WriteLine();
+            Typewrite3("Spelar:ID[2D*******5R]");
+            Console.WriteLine();
+            Typewrite3("DatorBattery[[***%]]");
+            Console.WriteLine();
+            Typewrite3("Språk[Svenska]");
+            Console.WriteLine();
+            Typewrite3("Skärm[Länkar]");
+            Console.WriteLine();
+            Typewrite3("WI-FI.TN_***********");
+            Console.WriteLine();
+            Typewrite3("System[X45O]::AI[¤]");
+            Console.WriteLine();
+            Typewrite3("AI [1]");
+            Console.WriteLine();
+            Typewrite3("AI [2]");
+            Console.WriteLine();
+            Typewrite3("AI [3]");
+            Console.WriteLine();
+            Typewrite3("AI [4]");
+            Console.WriteLine();
+            Typewrite3("AI...:...WALSTA.G[WEST]");
+            Console.WriteLine();
+            Typewrite3("TextT[¤5%] <= [STORLEK] Z-9]]");
+            Console.WriteLine();
+            Typewrite3("Svar[$]0,56344 GB=> 000000,234");
+            Console.WriteLine();
+
+            Console.ForegroundColor
+                = ConsoleColor.Red;
+            Typewrite2("ERROR:!!!");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.ResetColor();
 
 
-
-
-
-
-
-
+            Console.ForegroundColor
+                = ConsoleColor.Yellow;
+            Typewrite("Tyvär gick det inte att få fram ditt rseultat:(");
+            Console.WriteLine();
+            Typewrite("Hej då!");
+            Console.ReadLine();
 
 
 
@@ -1368,6 +1518,24 @@ namespace Test
             {
                 Console.Write(message[i]);
                 System.Threading.Thread.Sleep(10);
+            }
+        }
+
+        static void Typewrite2(string message)
+        {
+            for (int i = 0; i < message.Length; i++)
+            {
+                Console.Write(message[i]);
+                System.Threading.Thread.Sleep(80);
+            }
+        }
+
+        static void Typewrite3(string message)
+        {
+            for (int i = 0; i < message.Length; i++)
+            {
+                Console.Write(message[i]);
+                System.Threading.Thread.Sleep(20);
             }
         }
     }

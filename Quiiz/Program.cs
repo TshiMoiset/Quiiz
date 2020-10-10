@@ -8,9 +8,6 @@ namespace Test
         static void Main(string[] args)
         {
 
-
-
-
             String Svar;
 
             Console.ForegroundColor
@@ -184,7 +181,6 @@ namespace Test
                     Typewrite("Tryck ENTER för att starta!");
                     Console.WriteLine();
 
-
                     Fråga1();
                     break;
                 }
@@ -208,7 +204,7 @@ namespace Test
                 if (Svar3 == "d")
                 {
                     Console.WriteLine();
-                    Typewrite("Ok, någon satsar lågt.");
+                    Typewrite("Ok, någon satsar ganska lågt.");
                     Console.WriteLine();
 
                     Typewrite("Det kanske går bättre än vad man förväntar sig");
@@ -270,15 +266,13 @@ namespace Test
 
 
             Random number = new Random();
-            int score = number.Next(1, 150);
-            int Hp;
-            Hp = 500;
+            int score = number.Next(90, 150);
 
             String Svar4;
 
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga1:" + Hp + " Poäng");
+            Typewrite("Fråga1: " + score + " Poäng");
             Console.WriteLine();
             Typewrite("Vad heter USAs första president?");
             Console.WriteLine();
@@ -305,11 +299,12 @@ namespace Test
                     Typewrite("Korrekt Svar!");
                     Console.WriteLine();
 
-                    Typewrite("Dina poäng: ");
+                    Console.ForegroundColor
+                                                = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: " + score + " p");
                     Console.ResetColor();
                     Console.WriteLine();
                     Fråga2();
-
                     break;
                 }
 
@@ -324,7 +319,9 @@ namespace Test
                     Typewrite("Hahah!!");
                     Console.WriteLine();
 
-                    Typewrite(Hp - 500 + " p");
+                    Console.ForegroundColor
+                                                              = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     Console.WriteLine();
@@ -336,7 +333,7 @@ namespace Test
                 if (Svar4 == "2")
                 {
                     Console.ForegroundColor
-                                     = ConsoleColor.Red;
+                                     = ConsoleColor.Cyan;
                     Console.WriteLine();
                     Typewrite("Felaktigt Svar");
                     Console.WriteLine();
@@ -344,7 +341,9 @@ namespace Test
                     Typewrite("Hahah!!");
                     Console.WriteLine();
 
-                    Typewrite(Hp - 500 + " p");
+                    Console.ForegroundColor
+                                                                             = ConsoleColor.Blue;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     Console.WriteLine();
@@ -374,15 +373,16 @@ namespace Test
         static void Fråga2()
         {
 
-            int Hp;
-            Hp = 2000;
+            Random number = new Random();
+            int score = number.Next(70, 90);
+
             string svar5;
 
             Console.ForegroundColor
                 = ConsoleColor.Yellow;
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga 2: XX Poäng");
+            Typewrite("Fråga 2: " + score + " Poäng");
             Console.WriteLine();
             Typewrite("Heter det “en rak kurva” eller heter det “ett rak kurva”?");
             Console.WriteLine();
@@ -409,7 +409,9 @@ namespace Test
                     Typewrite("Hahah!!");
                     Console.WriteLine();
 
-                    Typewrite("0 p");
+                    Console.ForegroundColor
+                    = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     Console.WriteLine();
@@ -428,7 +430,9 @@ namespace Test
                     Typewrite("Hahah!!");
                     Console.WriteLine();
 
-                    Typewrite("0 p");
+                    Console.ForegroundColor
+                                      = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     Console.WriteLine();
@@ -445,7 +449,7 @@ namespace Test
                     Typewrite("Korrekt Svar!");
                     Console.WriteLine();
 
-                    Typewrite("Dina poäng: ");
+                    Typewrite("Förskaffade Poäng: " + score + " p");
                     Console.ResetColor();
                     Console.WriteLine();
                     fråga3();
@@ -473,13 +477,16 @@ namespace Test
         static void fråga3()
         {
 
+            Random number = new Random();
+            int score = number.Next(1345, 2422);
+
             Console.ForegroundColor
                                 = ConsoleColor.Yellow;
 
             string svar6;
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga 3: XX p");
+            Typewrite("Fråga 3: " + score + " Poäng");
             Console.WriteLine();
             Typewrite("Vad är meningen med livet?");
             Console.WriteLine();
@@ -505,7 +512,11 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Bara för att får du fel på frågan, Hahaha!");
                     Console.WriteLine();
-                    Typewrite("0 p");
+
+
+                    Console.ForegroundColor
+                    = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga4();
@@ -526,7 +537,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Vi får se hur det går i nästa fråga.");
                     Console.WriteLine();
-                    Typewrite("0 p");
+
+                    Console.ForegroundColor
+               = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga4();
@@ -543,7 +557,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Jag finns inte!!");
                     Console.WriteLine();
-                    Typewrite("0 p");
+
+                    Console.ForegroundColor
+               = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga4();
@@ -569,15 +586,19 @@ namespace Test
         static void fråga4()
         {
 
+
+            Random number = new Random();
+            int score = number.Next(800, 1000);
+
             string svar7;
 
             Console.ForegroundColor
             = ConsoleColor.Yellow;
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga 4: XX p");
+            Typewrite("Fråga 4: " + score + " Poäng");
             Console.WriteLine();
-            Typewrite("Hur många sekunder har det gått mellan?");
+            Typewrite("Hur många sekunder har det gått mellan 2000 & 2019?");
             Console.WriteLine();
             Typewrite("1. 713 547 000s");
             Console.WriteLine();
@@ -600,7 +621,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("FELAKTIGT SVAR!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+= ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga5();
@@ -616,7 +640,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("FELAKTIGT SVAR!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+                                              = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga5();
@@ -633,7 +660,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Grattis!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+                                              = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: " + score + " p");
                     Console.ReadLine();
                     Console.ResetColor();
                     fråga5();
@@ -642,6 +672,8 @@ namespace Test
 
                 Console.WriteLine();
                 Typewrite("Svara med 1, X eller 2!");
+                Console.WriteLine();
+                Typewrite("Hur många sekunder har det gått mellan 2000 & 2019?");
                 Console.WriteLine();
                 Typewrite("1. 713 547 000s");
                 Console.WriteLine();
@@ -658,13 +690,17 @@ namespace Test
         static void fråga5()
         {
 
+
+            Random number = new Random();
+            int score = number.Next(1000, 1300);
+
             string svar8;
 
             Console.ForegroundColor
                       = ConsoleColor.Yellow;
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga 5: XX p");
+            Typewrite("Fråga 5: " + score + " Poäng");
             Console.WriteLine();
             Typewrite("Vilken färg har spegeln?");
             Console.WriteLine();
@@ -689,7 +725,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("HELT RÄTT!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+     = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: " + score + " p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga6();
@@ -705,9 +744,12 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("FELAKTIGT SVAR!!");
                     Console.WriteLine();
-                    Typewrite("Kommer du att svara sådär på alla frågor?");
+                    Typewrite("Kommer du att svara så där på alla frågor?");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+   = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga6();
@@ -726,7 +768,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Om du vinklar spegeln på en röd matta blir spegeln röd.");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+      = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.ReadLine();
                     Console.ResetColor();
                     fråga6();
@@ -752,13 +797,16 @@ namespace Test
         static void fråga6()
         {
 
+            Random number = new Random();
+            int score = number.Next(200, 450);
+
             string svar9;
 
             Console.ForegroundColor
                       = ConsoleColor.Yellow;
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga 6: XX p");
+            Typewrite("Fråga 6: " + score + " Poäng");
             Console.WriteLine();
             Typewrite("Är det här en bra fråga?");
             Console.WriteLine();
@@ -783,7 +831,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Felaktigt SVAR!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+      = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga7();
@@ -799,7 +850,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("JAG är den som ställer frågorna här!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+ = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga7();
@@ -816,7 +870,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("FELAKTIGT SVAR!!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+ = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.ReadLine();
                     Console.ResetColor();
                     fråga7();
@@ -842,13 +899,17 @@ namespace Test
         static void fråga7()
         {
 
+
+            Random number = new Random();
+            int score = number.Next(1300, 1500);
+
             string svar10;
 
             Console.ForegroundColor
                       = ConsoleColor.Yellow;
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga 7: XX p");
+            Typewrite("Fråga 7: " + score + " Poäng");
             Console.WriteLine();
             Typewrite("När du var i min ålder kunde du inte prata.");
             Console.WriteLine();
@@ -877,7 +938,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Felaktigt SVAR!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+          = ConsoleColor.Red;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga8();
@@ -895,7 +959,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("FELAKTIGT SVAR!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+                       = ConsoleColor.Red;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga8();
@@ -912,7 +979,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Korrekt svar!!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+                         = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng:" + score + " p");
                     Console.ReadLine();
                     Console.ResetColor();
                     fråga8();
@@ -921,8 +991,6 @@ namespace Test
 
                 Console.WriteLine();
                 Typewrite("Svara med 1, X eller 2!");
-                Console.WriteLine();
-                Typewrite("Fråga 7: XX p");
                 Console.WriteLine();
                 Typewrite("När du var i min ålder kunde du inte prata.");
                 Console.WriteLine();
@@ -942,13 +1010,15 @@ namespace Test
         static void fråga8()
         {
 
+            Random number = new Random();
+            int score = number.Next(1300, 1500);
             string svar11;
 
             Console.ForegroundColor
                       = ConsoleColor.Yellow;
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga 8: XX p");
+            Typewrite("Fråga 8: " + score + " Poäng");
             Console.WriteLine();
             Typewrite("Om du njuter av att slösa tid, är den tiden bortkastad?");
             Console.WriteLine();
@@ -975,7 +1045,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Felaktigt SVAR!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+      = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga9();
@@ -991,7 +1064,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("FELAKTIGT SVAR!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+   = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga9();
@@ -1008,7 +1084,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Felaktigt SVAR!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+    = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga9();
@@ -1038,13 +1117,16 @@ namespace Test
         static void fråga9()
         {
 
+
+            Random number = new Random();
+            int score = number.Next(1300, 1500);
             string svar12;
 
             Console.ForegroundColor
                       = ConsoleColor.Yellow;
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga 9: XX p");
+            Typewrite("Fråga 9: " + score + " Poäng");
             Console.WriteLine();
             Typewrite("Vad är 1-800 273 8255?");
             Console.WriteLine();
@@ -1067,7 +1149,11 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Korrekt svar!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+
+                    Console.ForegroundColor
+     = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: " + score + " p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga10();
@@ -1083,7 +1169,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("FELAKTIGT SVAR!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+     = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga10();
@@ -1100,7 +1189,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Felaktigt SVAR!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+        = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     fråga10();
@@ -1127,13 +1219,15 @@ namespace Test
         static void fråga10()
         {
 
+            Random number = new Random();
+            int score = number.Next(2000, 2500);
             string svar13;
 
             Console.ForegroundColor
                       = ConsoleColor.Yellow;
             Console.ReadLine();
             Console.WriteLine();
-            Typewrite("Fråga 10: XX p");
+            Typewrite("Fråga 10: " + score + " Poäng");
             Console.WriteLine();
             Typewrite("Sista frågan.");
             Console.WriteLine();
@@ -1160,7 +1254,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Hahaha!!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+        = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     resultat();
@@ -1178,7 +1275,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Korrekt svar!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+      = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: " + score + " p");
                     Console.WriteLine();
                     Console.ResetColor();
                     resultat();
@@ -1195,7 +1295,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Hahaha!!!");
                     Console.WriteLine();
-                    Typewrite("Dina poäng: ");
+
+                    Console.ForegroundColor
+                       = ConsoleColor.Cyan;
+                    Typewrite("Förskaffade Poäng: 0 p");
                     Console.WriteLine();
                     Console.ResetColor();
                     resultat();

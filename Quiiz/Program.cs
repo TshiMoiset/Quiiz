@@ -1014,12 +1014,10 @@ namespace Test
                     Console.WriteLine();
                     Typewrite("Korrekt Svar!!");
                     Console.WriteLine();
-                    Typewrite("FELAKTIGT SVAR!!");
-                    Console.WriteLine();
 
                     Console.ForegroundColor
    = ConsoleColor.Cyan;
-                    Typewrite("InFörskaffade Poäng: 0 p");
+                    Typewrite("InFörskaffade Poäng: " + score + " p");
                     Console.WriteLine();
                     Console.ResetColor();
                     Console.WriteLine();
@@ -1148,7 +1146,6 @@ namespace Test
             }
 
         }
-
         static void fråga10()
         {
 
@@ -1405,6 +1402,7 @@ namespace Test
             Console.ReadLine();
 
         }
+
         static void Typewrite(string message)
         {
             for (int i = 0; i < message.Length; i++)
